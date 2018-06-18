@@ -7,12 +7,14 @@ describe('Message', () => {
     const wrapper = shallowMount(Message, {
       propsData: { msg }
     })
+
     expect(wrapper.text()).toBe(msg)
   })
 
   it('renders default message if not passed a prop', () => {
     const defaultMessage = 'default message'
     const wrapper = shallowMount(Message)
+
     expect(wrapper.text()).toBe(defaultMessage)
   })
 })

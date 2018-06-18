@@ -8,20 +8,22 @@
 </template>
 
 <script>
-import Message from '@/components/Message.vue'
+  import Message from '@/components/Message.vue'
 
-export default {
-  name: 'message-toggle',
-  data: () => ({
-    msg: null
-  }),
-  methods: {
-    toggleMessage () {
-      this.msg = this.msg === 'message' ? 'toggled message' : 'message'
+  export default {
+    name: 'MessageToggle',
+    components: {
+      Message
+    },
+    data() {
+      return {
+        msg: null
+      }
+    },
+    methods: {
+      toggleMessage() {
+        this.msg = this.msg === 'message' ? 'toggled message' : 'message'
+      }
     }
-  },
-  components: {
-    Message
   }
-}
 </script>

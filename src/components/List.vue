@@ -7,10 +7,10 @@
 </template>
 
 <script>
-export default {
-  name: 'list',
-  props: [
-    'items'
-  ]
-}
+  export default {
+    name: 'List',
+    props: [
+      'items'
+    ]
+  }
 </script>
