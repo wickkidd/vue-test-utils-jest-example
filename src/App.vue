@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <message-toggle />
-    <list :items="['list item 1', 'list item 2']" />
+    <MessageToggle />
+    <List :items="items" @addItem="addItem" />
   </div>
 </template>
 
@@ -14,6 +14,16 @@
     components: {
       MessageToggle,
       List
+    },
+    data() {
+      return {
+        items: ['list item 1', 'list item 2']
+      }
+    },
+    methods: {
+      addItem(item) {
+        this.items.push(item)
+      }
     }
   }
 </script>
