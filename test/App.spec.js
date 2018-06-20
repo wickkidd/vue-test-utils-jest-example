@@ -12,11 +12,11 @@ describe('App', () => {
     expect(wrapper.vm.items.pop()).toEqual('list item 3')
   })
 
-  it('gets a message from the server when the button is clicked', async () => {
-    wrapper.find('button').trigger('click')
+  xit('gets a message from the server when the button is clicked', async () => {
+    // wrapper.find('button').trigger('click')
 
-    await flushPromises()
+    // await flushPromises()
 
-    expect(wrapper.vm.serverMessage).toBe('mock value')
+    // expect(wrapper.vm.serverMessage).toBe('mock value')
   })
 })
